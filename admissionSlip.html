@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.4.1.min.js"> </script> 
+	<script src="html2canvas.js"> </script>
+	<style>
+		input{
+			appearance:none;
+			-webkit-appearance:none;
+			-moz-appearance: none;
+			border: 1px solid black;
+			vertical-align:bottom;
+			padding:0;
+			width:10px;
+			height:10px;
+			position:relative;
+			
+		}
+		input:checked:after{
+			content:'\2714';
+			font-size:7pt;
+			position:absolute;
+			padding-bottom:10px;
+		}
+	</style>
+</head>
+<body style="font-family:arial; font-size:12pt;">
+<div id="container" style="border: 1px solid black; width:740px; height: 500px; padding:10px;position:relative;">
+	<div style="text-align:center;width:100%;"><!--header-->
+		<br>
+		PHILIPPINE SCIENCE HIGH SCHOOL SYSTEM<br>
+		CAMPUS: SOCCSKSARGEN<br><br>
+		CLINIC ADMISSION SLIP
+	</div><!--First form-->
+	<div style="font-size:8pt;"><br> <!--Second Form-->
+		<div style="width: 100%;">Date: <span style="border-bottom: 1px solid black; display: inline-block; width: 200px;">December 2, 2020 </span> </div><br>
+		<div style="width: 100%;">
+			<span> Student: </span><span style="border-bottom: 1px solid black; display: inline-block; width: 400px;"> Dela Cuadra, Kenneth T.</span>
+			<form style="float:right;"> 
+				<input style="width:12px; height:12px;" type="checkbox"checked disabled/> M
+				<input style="width:12px; height:12px;" type="checkbox" disabled/> F ______________________________
+			</form>
+		</div>
+		<div style="width:100%;"><span style="margin-left: 70px;">LAST</span> <span style="margin-left:120px;">FIRST</span> <span style="margin-left: 80px;">M.I</span></div>
+		
+		<div style="width: 100%; border-bottom: 1px dotted black; padding-bottom: 10px;">
+			<span> Grade & Section: </span><span style="border-bottom: 1px solid black; display: inline-block; width: 300px;"> 12 - Block F</span>
+			<span style="float:right"> Time Out: <span style="border-bottom: 1px solid black; display: inline-block; width: 70px;"> 12:00</span>AM/PM</span>
+			<span style="float:right; margin-right:20px;"> Time In: <span style="border-bottom: 1px solid black; display: inline-block; width: 70px;"> 8:00</span>AM/PM</span>
+		</div>
+	</div><br>
+	
+	<div style="font-size:8pt; border: 1px solid black; height: 230px;" ><!--Third form-->
+		<div style="width:24%; float:left;height:100%; border-right:1px solid black; padding-left:5px;"> 
+			<b>Nature of Complaint:</b>
+			<form>
+				<input type="checkbox" disabled/> Not Feeling Well <br>
+				<input type="checkbox" disabled/> Stomachache <br>
+				<input type="checkbox" disabled/> Headache <br>
+				<input type="checkbox" disabled/> Tootache <br>
+				<input type="checkbox" disabled/> Injury <span style="display:inline-block;border-bottom: 1px solid black; width: 115px;overflow:hidden;font-size:7pt;">Injured piece of hair</span><br>
+				<input type="checkbox" disabled/> Other 
+				<span style="display:inline-block;border-bottom: 1px solid black; width: 115px;overflow:hidden;font-size:7pt;"></span>
+				<span style="display:inline-block;border-bottom: 1px solid black; width: 115px;overflow:hidden;font-size:7pt;margin-left:50px"></span>
+				<div style="overflow-wrap:break-word;font-style:italic;overflow:hidden;width:155px;margin-left:5px; height:95px; padding:3px;line-height: 15px;font-size:7pt;border:1px solid green;margin-top:3px;"></div>
+			</form>
+		</div>
+		
+		<div style="width:37%; float:left;height:100%; border-right:1px solid black;padding-left:5px;">
+			<b>Action Taken:</b>
+			<form>
+				<input type="checkbox" disabled/> Student laid/sat in the clinic for 20 minutes or less <br>
+				<input type="checkbox" disabled/> Student laid/sat in the clinic for 20 minutes or more <br>
+				<input type="checkbox" disabled/> Temperature taken <br>
+				<input type="checkbox" disabled/> Ice pack applied to affected area <br>
+				<input type="checkbox" disabled/> Affected area cleaned <br>
+				<input type="checkbox" disabled/> Band aid applied to affected area <br>
+				<input type="checkbox" disabled/> Head checked for: <span style="font-size:7pt;display:inline-block;border-bottom:1px solid black; width:150px;overflow:hidden;">30 minutes? </span><br>
+				<input type="checkbox" disabled/> Parent/Guardian Notified <span style="display:inline-block;border-bottom:1px solid black; width:30px">2:00</span> at <span style="display:inline-block;border-bottom:1px solid black; width:30px">3:00</span>AM/PM <br>
+				<input type="checkbox" disabled/> Medication Given <br>
+				<input type="checkbox" disabled/> Other:<span style="font-size:7pt;display:inline-block;border-bottom:1px solid black; width:210px;overflow:hidden;"></span>
+				<div style="overflow-wrap:break-word;font-style:italic;overflow:hidden;width:260px; height:40px; padding:3px;line-height: 15px;font-size:7pt;border:1px solid green;margin-right:10px;margin-top:5px;"></div>
+			</form>
+		</div>
+		<div style="width:35%; float:left; height:100%;padding-left:5px;">
+			<b>Disposition of Student:</b>
+			<form>
+				<input type="checkbox" disabled/> Returned to class, feeling better <br>
+				<input type="checkbox" disabled/> Returned to class at parent's/guardian's request <br>
+				<input type="checkbox" disabled/> Returned to class, unable to contact parent/guardian <br>
+				<input type="checkbox" disabled/> Sent home <br>
+				<input type="checkbox" disabled/> Teacher notified <br>
+				<input type="checkbox" disabled/> Referral was made to Health Care Provider <br>
+				<input type="checkbox" disabled/> Transported to Hospital <br>
+				<input type="checkbox" disabled/> Copy of clinic pass sent home <br>
+				<input type="checkbox" disabled/> Other <span style="display:inline-block;border-bottom:1px solid black; width:200px;"></span><br>
+				Remarks: <span style="display:inline-block;border-bottom:1px solid black; width:200px"></span>
+				<div style="overflow-wrap:break-word;font-style:italic;overflow:hidden;width:250px; height:30px; padding:3px;line-height: 15px;font-size:7pt;border:1px solid green;margin-right:10px;margin-top:5px;"></div>
+			</form>
+		</div>
+	</div>
+	<div style="width:100%; font-size:11px;"><br>
+		<div style="float:left; margin-top: 10px;">Handled By:</div> 
+		<div style="text-align: center;float:left; margin-top: 10px;margin-left:10px;">
+			<span style="display:inline-block;border-bottom:1px solid black; width:200px"></span><br>
+				School Nurse
+		</div>
+	</div>
+	<div style="border-top: 1px solid black; bottom:0; position: absolute; width:100%; font-size:10pt;left:0;padding:2px;"><!--Last Form-->
+		<b>PSHS-00-F-HSU-04-Ver02-Rev0-02/01/20</b>
+	</div>
+</div>
+
+	<div id="previewImage"></div> 
+	
+	<a id="btn-Preview-Image">Preview </a>
+	<a id="btn-Convert-Html2Image" href="#"> Download </a> 
+	
+	
+	<script> 
+		$(document).ready(function() {
+			// Global variable 
+			var element = $("#container"); 
+			// Global variable 
+			var getCanvas; 
+			$("#btn-Preview-Image").on('click', function() { 
+				html2canvas(element, { 
+					onrendered: function(canvas) { 
+						$("#previewImage").append(canvas); 
+						getCanvas = canvas; 
+					} 
+				}); 
+			}); 
+
+			$("#btn-Convert-Html2Image").on('click', function() { 
+				var imgageData = getCanvas.toDataURL("image/jpg"); 
+			
+				//holy code, do not touch
+				var newData = imgageData.replace( /^data:image\/jpg/, "data:application/octet-stream"); 
+			
+				$("#btn-Convert-Html2Image").attr( "download", "eii.jpg").attr( "href", newData); 
+			}); 
+		}); 
+	</script> 
+</body>
+</html>
